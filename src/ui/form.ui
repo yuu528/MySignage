@@ -10,6 +10,18 @@
     <height>480</height>
    </rect>
   </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>480</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>480</height>
+   </size>
+  </property>
   <property name="palette">
    <palette>
     <active>
@@ -118,18 +130,6 @@
       <layout class="QVBoxLayout" name="verticalLayout_2">
        <item>
         <widget class="QLabel" name="page1_time">
-         <property name="minimumSize">
-          <size>
-           <width>800</width>
-           <height>480</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>800</width>
-           <height>480</height>
-          </size>
-         </property>
          <property name="font">
           <font>
            <family>IPAexゴシック</family>
