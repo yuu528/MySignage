@@ -7,8 +7,20 @@
     <x>0</x>
     <y>0</y>
     <width>800</width>
-    <height>581</height>
+    <height>480</height>
    </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>480</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>480</height>
+   </size>
   </property>
   <property name="palette">
    <palette>
@@ -65,9 +77,22 @@
   <property name="windowTitle">
    <string>Widget</string>
   </property>
-  <layout class="QVBoxLayout" name="verticalLayout">
-   <item>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
     <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="status_label">
+       <property name="font">
+        <font>
+         <family>IPAexゴシック</family>
+         <pointsize>40</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
      <item>
       <spacer name="horizontalSpacer_2">
        <property name="orientation">
@@ -83,6 +108,12 @@
      </item>
      <item>
       <widget class="QLabel" name="status_time">
+       <property name="font">
+        <font>
+         <family>IPAexゴシック</family>
+         <pointsize>40</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>--:--</string>
        </property>
@@ -90,32 +121,19 @@
      </item>
     </layout>
    </item>
-   <item>
-    <widget class="QStackedWidget" name="stackedWidget">
+   <item row="1" column="0">
+    <widget class="QStackedWidget" name="stacked_widget">
      <property name="currentIndex">
       <number>0</number>
      </property>
      <widget class="QWidget" name="page1">
       <layout class="QVBoxLayout" name="verticalLayout_2">
        <item>
-        <widget class="QLabel" name="page1_date">
+        <widget class="QLabel" name="page1_time">
          <property name="font">
           <font>
            <family>IPAexゴシック</family>
-           <pointsize>40</pointsize>
-          </font>
-         </property>
-         <property name="text">
-          <string>----/--/-- (--)</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="page2_time">
-         <property name="font">
-          <font>
-           <family>IPAexゴシック</family>
-           <pointsize>200</pointsize>
+           <pointsize>220</pointsize>
           </font>
          </property>
          <property name="text">
@@ -149,15 +167,12 @@
           </widget>
          </item>
          <item>
-          <widget class="QGraphicsView" name="page2_today_icon">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
+          <widget class="QLabel" name="page2_today_icon">
+           <property name="text">
+            <string/>
            </property>
-           <property name="interactive">
-            <bool>true</bool>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
            </property>
           </widget>
          </item>
@@ -165,6 +180,15 @@
           <layout class="QHBoxLayout" name="horizontalLayout_4">
            <item>
             <widget class="QLabel" name="page2_today_temp1">
+             <property name="font">
+              <font>
+               <family>IPAexゴシック</family>
+               <pointsize>30</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: red;</string>
+             </property>
              <property name="text">
               <string>--℃</string>
              </property>
@@ -175,6 +199,15 @@
            </item>
            <item>
             <widget class="QLabel" name="page2_today_temp2">
+             <property name="font">
+              <font>
+               <family>IPAexゴシック</family>
+               <pointsize>30</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: blue;</string>
+             </property>
              <property name="text">
               <string>--℃</string>
              </property>
@@ -230,12 +263,12 @@
           </widget>
          </item>
          <item>
-          <widget class="QGraphicsView" name="page2_tom_icon">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
+          <widget class="QLabel" name="page2_tom_icon">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
            </property>
           </widget>
          </item>
@@ -243,6 +276,15 @@
           <layout class="QHBoxLayout" name="horizontalLayout_7">
            <item>
             <widget class="QLabel" name="page2_tom_temp1">
+             <property name="font">
+              <font>
+               <family>IPAexゴシック</family>
+               <pointsize>30</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: red;</string>
+             </property>
              <property name="text">
               <string>--℃</string>
              </property>
@@ -253,6 +295,15 @@
            </item>
            <item>
             <widget class="QLabel" name="page2_tom_temp2">
+             <property name="font">
+              <font>
+               <family>IPAexゴシック</family>
+               <pointsize>30</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: blue;</string>
+             </property>
              <property name="text">
               <string>--℃</string>
              </property>
@@ -310,12 +361,9 @@
          <item>
           <layout class="QHBoxLayout" name="horizontalLayout_13">
            <item>
-            <widget class="QGraphicsView" name="page2_day3_icon">
-             <property name="sizePolicy">
-              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-               <horstretch>0</horstretch>
-               <verstretch>0</verstretch>
-              </sizepolicy>
+            <widget class="QLabel" name="page2_day3_icon">
+             <property name="text">
+              <string/>
              </property>
             </widget>
            </item>
@@ -323,6 +371,15 @@
             <layout class="QVBoxLayout" name="verticalLayout_8">
              <item>
               <widget class="QLabel" name="page2_day3_temp">
+               <property name="font">
+                <font>
+                 <family>IPAexゴシック</family>
+                 <pointsize>30</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: red;</string>
+               </property>
                <property name="text">
                 <string>--℃</string>
                </property>
@@ -358,12 +415,25 @@
          <item>
           <layout class="QHBoxLayout" name="horizontalLayout_14">
            <item>
-            <widget class="QGraphicsView" name="page2_day4_icon"/>
+            <widget class="QLabel" name="page2_day4_icon">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
            </item>
            <item>
             <layout class="QVBoxLayout" name="verticalLayout_9">
              <item>
               <widget class="QLabel" name="page2_day4_temp">
+               <property name="font">
+                <font>
+                 <family>IPAexゴシック</family>
+                 <pointsize>30</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: red;</string>
+               </property>
                <property name="text">
                 <string>--℃</string>
                </property>
@@ -390,9 +460,118 @@
        </item>
       </layout>
      </widget>
+     <widget class="QWidget" name="page3">
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="0">
+        <widget class="QStackedWidget" name="page3_stacked_widget">
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <widget class="QWidget" name="page3_page1">
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <item>
+            <widget class="QLabel" name="page3_page1_weather_config">
+             <property name="text">
+              <string>天気情報設定</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_10">
+             <item>
+              <widget class="QLabel" name="page3_page1_interval_label">
+               <property name="text">
+                <string>更新間隔(分)</string>
+               </property>
+               <property name="indent">
+                <number>100</number>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSpinBox" name="page3_page1_interval">
+               <property name="minimum">
+                <number>1</number>
+               </property>
+               <property name="value">
+                <number>30</number>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_6">
+             <item>
+              <widget class="QLabel" name="page3_page1_lat_label">
+               <property name="text">
+                <string>緯度</string>
+               </property>
+               <property name="indent">
+                <number>100</number>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QDoubleSpinBox" name="page3_page1_lat">
+               <property name="decimals">
+                <number>6</number>
+               </property>
+               <property name="minimum">
+                <double>24.165900000000001</double>
+               </property>
+               <property name="maximum">
+                <double>45.332599999999999</double>
+               </property>
+               <property name="singleStep">
+                <double>1.000000000000000</double>
+               </property>
+               <property name="value">
+                <double>35.689500000000002</double>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_9">
+             <item>
+              <widget class="QLabel" name="page3_page1_lon_label">
+               <property name="text">
+                <string>経度</string>
+               </property>
+               <property name="indent">
+                <number>100</number>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QDoubleSpinBox" name="page3_page1_lon">
+               <property name="decimals">
+                <number>6</number>
+               </property>
+               <property name="minimum">
+                <double>122.555700000000002</double>
+               </property>
+               <property name="maximum">
+                <double>153.591199999999986</double>
+               </property>
+               <property name="value">
+                <double>139.691721999999999</double>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
     </widget>
    </item>
-   <item>
+   <item row="2" column="0">
     <layout class="QHBoxLayout" name="horizontalLayout_2">
      <item>
       <widget class="QPushButton" name="ctrl_conf">
