@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>800</width>
-    <height>480</height>
+    <height>581</height>
    </rect>
   </property>
   <property name="palette">
@@ -58,6 +58,7 @@
   </property>
   <property name="font">
    <font>
+    <family>IPAexゴシック</family>
     <pointsize>30</pointsize>
    </font>
   </property>
@@ -92,7 +93,7 @@
    <item>
     <widget class="QStackedWidget" name="stackedWidget">
      <property name="currentIndex">
-      <number>1</number>
+      <number>0</number>
      </property>
      <widget class="QWidget" name="page1">
       <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -100,6 +101,7 @@
         <widget class="QLabel" name="page1_date">
          <property name="font">
           <font>
+           <family>IPAexゴシック</family>
            <pointsize>40</pointsize>
           </font>
          </property>
@@ -112,6 +114,7 @@
         <widget class="QLabel" name="page2_time">
          <property name="font">
           <font>
+           <family>IPAexゴシック</family>
            <pointsize>200</pointsize>
           </font>
          </property>
@@ -133,6 +136,7 @@
           <widget class="QLabel" name="page2_today">
            <property name="font">
             <font>
+             <family>IPAexゴシック</family>
              <pointsize>30</pointsize>
             </font>
            </property>
@@ -213,6 +217,7 @@
           <widget class="QLabel" name="page2_tom">
            <property name="font">
             <font>
+             <family>IPAexゴシック</family>
              <pointsize>30</pointsize>
             </font>
            </property>
@@ -290,6 +295,7 @@
           <widget class="QLabel" name="page2_day3">
            <property name="font">
             <font>
+             <family>IPAexゴシック</family>
              <pointsize>30</pointsize>
             </font>
            </property>
@@ -398,6 +404,7 @@
        </property>
        <property name="font">
         <font>
+         <family>IPAexゴシック</family>
          <pointsize>20</pointsize>
         </font>
        </property>
@@ -429,6 +436,7 @@
        </property>
        <property name="font">
         <font>
+         <family>IPAexゴシック</family>
          <pointsize>20</pointsize>
         </font>
        </property>
@@ -441,6 +449,7 @@
       <widget class="QPushButton" name="ctrl_next">
        <property name="font">
         <font>
+         <family>IPAexゴシック</family>
          <pointsize>20</pointsize>
         </font>
        </property>
