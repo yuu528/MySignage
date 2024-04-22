@@ -34,7 +34,7 @@ class ConfigController:
             self.ms.window,
             self.ms.window.page3_page1_lat_label.text(),
             'float',
-            153
+            45
         )
         result = dialog.exec_()
 
@@ -47,7 +47,7 @@ class ConfigController:
             self.ms.window,
             self.ms.window.page3_page1_lon_label.text(),
             'float',
-            45
+            153
         )
         result = dialog.exec_()
 
