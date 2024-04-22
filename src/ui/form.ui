@@ -477,6 +477,27 @@
             </widget>
            </item>
            <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_11">
+             <item>
+              <widget class="QLabel" name="page3_page1_update_label">
+               <property name="text">
+                <string>強制更新</string>
+               </property>
+               <property name="indent">
+                <number>100</number>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="page3_page1_update">
+               <property name="text">
+                <string>実行</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
             <layout class="QHBoxLayout" name="horizontalLayout_10">
              <item>
               <widget class="QLabel" name="page3_page1_interval_label">

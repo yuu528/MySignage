@@ -4,6 +4,8 @@ class ParentController:
         self.window = ms.window
         self.cu = ms.cu
 
+        self.status_label = [''] * self.window.stacked_widget.count()
+
         self.set_page(0)
 
         self.window.ctrl_next.clicked.connect(self.next_page)
@@ -51,4 +53,12 @@ class ParentController:
             self.window.status_time.setHidden(False)
             self.window.status_label.setHidden(True)
 
+        self.window.status_label.setText(self.status_label[idx])
+
         self.window.stacked_widget.setCurrentIndex(idx)
+
+    def set_status_label(self, page, text):
+        self.status_label[page] = text
+        self.ms.window.status_label.setText(
+            self.status_label[self.ms.window.stacked_widget.currentIndex()]
+        )

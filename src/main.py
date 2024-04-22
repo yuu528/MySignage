@@ -7,6 +7,7 @@ from window.main import MainWindow
 
 from controller.parent import ParentController
 from controller.config import ConfigController
+from controller.weather import WeatherController
 
 from worker.interval import IntervalWorker
 from util.config import ConfigUtil
@@ -19,8 +20,10 @@ class MySignage:
 
         self.cu = ConfigUtil()
 
+        self.wc = WeatherController(self)
         self.pc = ParentController(self)
         self.cc = ConfigController(self)
+
         self.iw = IntervalWorker(self)
 
         self.window.show()
