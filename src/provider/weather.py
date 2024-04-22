@@ -32,7 +32,7 @@ class WeatherProvider:
                 'icon': icon
             })
 
-            uf.download_tmp('https:' + ret['days'][0]['icon'])
+            uf.download_tmp('https:' + icon)
 
         # 3, 4 days later
         for i in range(2, 4):
