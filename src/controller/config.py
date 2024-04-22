@@ -1,9 +1,10 @@
-from dialog.input import InputDialog
+from window.input import InputDialog
 
 class ConfigController:
-    def __init__(self, window, cu):
-        self.window = window
-        self.cu = cu
+    def __init__(self, ms):
+        self.ms = ms
+        self.window = ms.window
+        self.cu = ms.cu
 
         self.sec_d = 'Date'
         self.sec_w = 'Weather'

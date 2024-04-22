@@ -19,13 +19,16 @@ def get_tmp_path(url):
     return os.path.join(get_tmp_dir(), os.path.basename(url))
 
 def get_tmp_dir():
-    tmp_dir = os.path.abspath(
-        os.path.join(
-            os.path.dirname(__file__), os.pardir, os.pardir, 'tmp'
-        )
-    )
+    tmp_dir = os.path.join(get_proj_dir(), 'tmp')
 
     if not os.path.isdir(tmp_dir):
         os.makedirs(tmp_dir)
 
     return tmp_dir
+
+def get_proj_dir():
+    return os.path.abspath(
+        os.path.join(
+            os.path.dirname(__file__), os.pardir, os.pardir
+        )
+    )

@@ -1,7 +1,8 @@
 class ParentController:
-    def __init__(self, window, cu):
-        self.window = window
-        self.cu = cu
+    def __init__(self, ms):
+        self.ms = ms
+        self.window = ms.window
+        self.cu = ms.cu
 
         self.set_page(0)
 

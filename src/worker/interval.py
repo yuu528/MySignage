@@ -12,9 +12,11 @@ from provider.weather import WeatherProvider
 import util.file as uf
 
 class IntervalWorker:
-    def __init__(self, window, cu):
-        self.window = window
-        self.cu = cu
+    def __init__(self, ms):
+        self.ms = ms
+        self.window = ms.window
+        self.cu = ms.cu
+
         self.wp = WeatherProvider()
 
         self.last_weather = datetime.datetime.min

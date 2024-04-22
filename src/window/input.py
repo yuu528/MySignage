@@ -1,7 +1,9 @@
 import os
 from PyQt5 import QtCore, QtWidgets, uic
 
-input_ui = uic.loadUiType(os.path.join(os.path.dirname(__file__), os.pardir, 'ui', 'input_dialog.ui'))[0]
+import util.file as uf
+
+input_ui = uic.loadUiType(os.path.join(uf.get_proj_dir(), 'src', 'ui', 'input_dialog.ui'))[0]
 
 class InputDialog(QtWidgets.QDialog, input_ui):
     def __init__(self, parent, title, input_type, max=None):
@@ -9,10 +11,11 @@ class InputDialog(QtWidgets.QDialog, input_ui):
 
         self.input_type = input_type
 
+        self.setupUi(self)
+
         self.setWindowTitle("Input Dialog")
         self.setWindowFlags(QtCore.Qt.Window)
         self.resize(800, 480)
-        self.setupUi(self)
 
         self.title.setText(title)
 
