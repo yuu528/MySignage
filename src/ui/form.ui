@@ -10,6 +10,18 @@
     <height>480</height>
    </rect>
   </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>480</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>480</height>
+   </size>
+  </property>
   <property name="palette">
    <palette>
     <active>
@@ -118,18 +130,6 @@
       <layout class="QVBoxLayout" name="verticalLayout_2">
        <item>
         <widget class="QLabel" name="page1_time">
-         <property name="minimumSize">
-          <size>
-           <width>800</width>
-           <height>480</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>800</width>
-           <height>480</height>
-          </size>
-         </property>
          <property name="font">
           <font>
            <family>IPAexゴシック</family>
@@ -489,12 +489,9 @@
               </widget>
              </item>
              <item>
-              <widget class="QSpinBox" name="page3_page1_interval">
-               <property name="minimum">
-                <number>1</number>
-               </property>
-               <property name="value">
-                <number>30</number>
+              <widget class="QPushButton" name="page3_page1_interval">
+               <property name="text">
+                <string>PushButton</string>
                </property>
               </widget>
              </item>
@@ -513,21 +510,9 @@
               </widget>
              </item>
              <item>
-              <widget class="QDoubleSpinBox" name="page3_page1_lat">
-               <property name="decimals">
-                <number>6</number>
-               </property>
-               <property name="minimum">
-                <double>24.165900000000001</double>
-               </property>
-               <property name="maximum">
-                <double>45.332599999999999</double>
-               </property>
-               <property name="singleStep">
-                <double>1.000000000000000</double>
-               </property>
-               <property name="value">
-                <double>35.689500000000002</double>
+              <widget class="QPushButton" name="page3_page1_lat">
+               <property name="text">
+                <string>PushButton</string>
                </property>
               </widget>
              </item>
@@ -546,18 +531,9 @@
               </widget>
              </item>
              <item>
-              <widget class="QDoubleSpinBox" name="page3_page1_lon">
-               <property name="decimals">
-                <number>6</number>
-               </property>
-               <property name="minimum">
-                <double>122.555700000000002</double>
-               </property>
-               <property name="maximum">
-                <double>153.591199999999986</double>
-               </property>
-               <property name="value">
-                <double>139.691721999999999</double>
+              <widget class="QPushButton" name="page3_page1_lon">
+               <property name="text">
+                <string>PushButton</string>
                </property>
               </widget>
              </item>
