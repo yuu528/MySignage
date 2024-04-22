@@ -13,7 +13,7 @@ while true; do
 
 	pid=$!
 
-	inotifywait -r -e modify --exclude '.*\.swp' ./src
+	inotifywait -r -e modify --exclude '.*\.swp|.*\.pyc.*' ./src
 
 	kill $pid
 	wait $pid
