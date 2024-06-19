@@ -16,6 +16,9 @@ class WeatherController:
 
         data = self.wp.get(lat, lon)
 
+        if 'title' not in data or 'days' not in data or len(data['days']) < 4:
+            return
+
         # Title
         self.ms.pc.set_status_label(1, data['title'])
 
